@@ -1,0 +1,468 @@
+::selection {
+	background-color: black;
+	color: lightblue;
+}
+
+@font-face {
+	font-family: 'miLetra';
+	src: url('elementos/miLetra.ttf');
+}
+
+@keyframes rodar{
+	0% {
+		left: 1500px;
+	}
+	
+	100% {
+		left: -600px;
+	}
+}
+
+body{
+	margin: 0px;
+	background-color: #3230ad;
+}
+
+table {
+    border-style: solid;
+    border-spacing: 0px;
+    border-width: 1px;
+    border-color: black;
+    margin: auto;
+	background-color: white;
+}
+
+h1 {
+	padding-top: 30px;
+	margin: 0px;
+	color: white;
+}
+
+h2 {
+	color: #3230ad;
+}
+
+h3 {
+	font: 60px miLetra, verdana, sans-serif;
+    margin-top: 0px;
+    margin-bottom: -30px;
+}
+
+h4 {
+	text-align: center;
+    margin-bottom: 10px;
+    color: #3230ad;
+}
+
+h5 {
+	margin-top: 3px;
+	color: white;
+	font-size: 11pt;
+}
+
+li {
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+	
+td {
+		
+	border-style: solid;
+	border-width: 0.5px;
+	font-size: 7pt;
+	padding: 2px;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+input {
+	margin-bottom: 7px;
+}
+
+b {
+	color: royalblue;
+}
+
+/*MENU*/
+
+#menu {
+	position: fixed; top: 0px; left: 0px;
+	background-image: url("elementos/mapa.jpg");
+	width: 25%;
+	height: 1500px;
+	border-right-style: solid;
+	border-right-color: royalblue;
+	border-right-width: 3px;
+}
+
+	#menu a:link {
+		color: white;
+	}
+
+	#menu a:visited {
+		color: white;
+	}
+
+	#menu a:active {
+		color:white;
+	}
+
+	#menu a:hover, a:focus {
+		text-decoration: underline;
+	}
+
+	.logo{
+		display: block;
+		margin: auto;
+		padding-top: 10px;
+	}
+
+	#menuInicio{
+		position: fixed;
+		top: 150px;
+		width: 25%;
+		height: 50px;
+		color: white;
+		text-align: center;
+		border-top-style: solid;
+		border-top-color: white;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: white;
+		border-bottom-width: 1px;
+	}
+
+	#menuPersonajes{
+		position: fixed;
+		top: 200px;
+		width: 25%;
+		height: 50px;
+		border-bottom-style: solid;
+		border-bottom-color: white;
+		border-bottom-width: 1px;
+	}
+
+	#menuSecretos{
+		position: fixed;
+		top: 250px;
+		width: 25%;
+		height: 50px;
+		border-bottom-style: solid;
+		border-bottom-color: white;
+		border-bottom-width: 1px;
+	}
+
+	#menuContacto{
+		position: fixed;
+		top: 300px;
+		width: 25%;
+		height: 50px;
+		border-bottom-style: solid;
+		border-bottom-color: white;
+		border-bottom-width: 1px;
+	}
+
+	#nombreMenu{
+		text-align: center;
+		color: white;
+		margin: 17px;
+	}
+
+	/*PAGINA DE INICIO*/
+	
+#paginaCentral{
+	float: right;
+	background-color: #e5efff;
+	width: 75%;
+	height: 1500px;
+}
+
+	.azul {
+		color: royalblue;
+	}
+	
+	.limoAnimado {
+		position: absolute;
+		left: 1500px;
+		-webkit-transform: rotate (-1000deg);
+		transition: rotate 5s linear 1s;
+		animation: rodar 5s linear 1 normal 1s forwards;
+	}
+
+
+	.textoLindo {
+		width: 65%;
+		text-align: justify;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.iconoHeroes {
+		margin-right: 10px;
+		margin-left: 10px;
+		transition: transform 3s ease;
+	}
+	
+	.iconoHeroes:hover {
+		transform: rotate(1440deg);
+	}
+	
+	#heroesIcono {
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#descubreSecretos {
+		background-color: #3230ad;
+		height: 100px;
+	}
+	
+	/*PAGINA DE PERSONAJES*/
+	
+	#paginaCentralII{
+		float: right;
+		background-color: #e5efff;
+		width: 75%;
+		height: 2200px;
+	}
+	
+	#personajeCaja {
+		margin-left: auto;
+		margin-right: auto;
+		width:70%;
+		background-color: #a8b9ec;
+		border-style: solid;
+		border-width: 10px;
+		border-color: #3230ad;
+		height: 428px;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	#personajeCaja:hover #personajePortada {
+		transform: translateY(-750px);
+	}
+	
+	#personajePortada{
+		position:absolute;
+		width: 100%;
+		height: 428px;
+		opacity:1;
+		transition: transform 2s ease;
+	}
+	
+	#personajeInformacion {
+		opacity: 1;
+		position: relative;
+		transition: opacity 2s ease;
+	}
+	
+	.armas {
+		font-size: 8pt;
+		font-family: "courier new";
+	}
+	
+	#personajeTitulo {
+		width: 100%;
+		text-align: center;
+		position: absolute;
+	}
+	
+	#personajeImagen {
+		float: right;
+		width: 30%;
+		height: 100%;
+	}
+	
+	#personajeVacioTitulo {
+		float: left;
+		width: 70%;
+		height: 65px;
+	}
+	
+	#personajeVacioTexto {
+		float: left;
+		width: 70%;
+		height: 122px;
+	}
+	
+	#personajeVacioTablas {
+		float: left;
+		width: 70%;
+		height: 150px;
+	}
+	
+	#personajeDivisionIzquierda {
+		float: left;
+		width: 65%;
+		height: 122px;
+	}
+	
+	.parrafoPersonaje {
+		font-size: 10pt;
+		text-align: justify;
+		margin: 15px;
+	}
+	
+	#personajeDivisionDerecha {
+		float: right;
+		width: 35%;
+		height: 122px;
+	}
+	
+	#personajeDivisionIzquierda2 {
+		float: left;
+		width: 50%;
+		height: 234px;
+		margin-left: 10px;
+	}
+	
+	#personajeDivisionDerecha2 {
+		float: right;
+		width: 50%;
+		height: 234px;
+		margin-left: -10px;
+	}
+	
+	/*PAGINA DE CONTACTO*/
+	
+	#paginaCentralIII{
+		float: right;
+		background-color: #e5efff;
+		width: 75%;
+		height: 850px;
+	}
+	
+	#formulario {
+		margin-left: 25%;
+		border-style: dashed;
+		padding: 10px;
+		border-color: royalblue;
+		margin-right: 25%;
+	}
+	
+	/*PAGINA DE CONSEJOS*/
+	
+	#paginaCentralIV{
+		float: right;
+		background-color: #e5efff;
+		width: 75%;
+		height: 2500px;
+	}
+	
+	.h1nuevo {
+		text-align: left;
+		margin-left: 65px;
+		color: #3230ad;
+	}
+	
+	
+	.textoConsejos{
+		text-align: justify;
+		padding-left: 65px;
+		padding-right: 65px;
+	}
+	
+	.imagenALaDerecha{
+		float: right;
+		margin: 20px;
+	}
+	
+	.imagenALaIzquierda {
+		float: left;
+		margin: 20px;
+	}
+	
+/*Este es un div genérico para insertar blancos más grandes que un <br> en mi página*/	
+	
+#insertandoBlanco {
+	padding: 40px;
+}
+
+/*FOOTER*/
+
+#footer{
+	height: 125px;	
+	border-top-style: solid;
+	border-top-color: white;
+	border-top-width: 1px;
+	color: white;
+	font-size: 8pt;
+}
+
+	#footer a {
+		text-decoration: underline;
+		color: royalblue;
+	}
+	
+		#footer a:link {
+			color: #86a2f7
+		}
+
+		#footer a:visited {
+			color: #86a2f7;
+		}
+
+		#footer a:active {
+			color: #86a2f7
+		}
+
+		#footer a:hover, a:focus {
+			text-decoration: none;
+		}
+		
+	
+	.parrafoFooter {
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+	
+	#footerDerecho {
+		width: 30%;
+		height: 50px;
+		float: right;
+	}
+	
+	#footerIzquierdo {
+		width: 65%;
+		height: 50px;
+		float: left;
+	}
+		
+		#footerColumnaPrimera{
+			width: 45%;
+			height: 50px;
+			float: left;
+		}
+		
+		#footerColumnaSegunda{
+			width: 45%;
+			height: 50px;
+			float: right;
+		}
+	
+	#marcoFooter{
+		float: right;
+		width: 71%;
+		height: 125px;
+		margin: 2%;
+	
+	}
+	
+	#reFooter {
+		float: right;
+		width: 75%;
+		background-color: #040b25;
+		color: white;
+		height: 25px;
+	}
+	
+		.parrafoReFooter {
+			margin-top: 6px;
+			margin-left: 15px;
+			font-size: 9pt;
+		}

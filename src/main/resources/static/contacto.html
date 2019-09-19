@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Mi pagina sobre DragonQuest VIII">
+		<meta name="keywords" content="HTML5, CSS3, Felip, Dragon Quest">
+		<title>Contacto</title> <!-- Título en el navegador -->
+		<link rel="stylesheet" href="estilo.css" type="text/css" /> <!-- Para que funcione el CSS -->
+		<link rel="shortcut icon" href="elementos/favicon.ico" type="image/x-icon">
+	</head>
+
+	<body>
+		<div id="menu">
+			<a href="index.html"><img class="logo" src="elementos/logo.png"/></a>
+			<div id="menuInicio"><div id="nombreMenu"><a href="index.html">INICIO</a></div></div>
+			<div id="menuPersonajes"><div id="nombreMenu"><a href="personajes.html">PERSONAJES</a></div></div>
+			<div id="menuSecretos"><div id="nombreMenu"><a href="consejos.html">CONSEJOS</a></div></div>
+			<div id="menuContacto"><div id="nombreMenu"><a href="contacto.html">CONTACTO</a></div></div>
+		</div>
+		<div id="paginaCentralIII">
+			<div style="padding-left: 100px; padding-right: 100px; padding-top: 20px;">
+			<h2>¡Contacta con nosotros!</h2>
+			<p style="text-align:justify;">¿Crees que a nuestra página le falta algún detalle? ¿Te ha gustado mucho y quieres decírnoslo? ¡Rellena este formulario y cuéntanos que te ha parecido la visita!</p>
+			<br><br>
+			<form id="formulario" method="post" action="http://www.formular-chef.com/Formular-Chef.cgi">
+				<input type="hidden" name="recipient" value="feliplyllopis@gmail.com">
+					<b>Nombre:* </b> <input type="text" id="nombre" name="nombre" size="20" maxLength="30" required /><br>
+					<b>Correo electrónico:</b> <input type="text" id="nombre" name="nombre" size="20" maxLength="30" required /><br>
+					<b>¿En qué país vives?:</b> <input type="text" id="nombre" name="nombre" size="20" maxLength="30" /><br>
+					<b>¿Cuántos años tienes?:</b> <input type="text" id="nombre" name="nombre" size="20" maxLength="30" /><br>
+					<input type="radio" name="publi" value="si" checked="checked" />Hombre <input type="radio" name="publi" value="no"/>Mujer <input type="radio" name="publi" value="no"/>Sin determinar<br>
+					<b>¿Qué protagonistas son tus favoritos?</b><br>
+					<input type="checkbox" name="personajesFavos" value="heroe"/>El héroe<br>
+					<input type="checkbox" name="personajesFavos" value="yangus"/>Yangus<br>
+					<input type="checkbox" name="personajesFavos" value="jessica"/>Jessica<br>
+					<input type="checkbox" name="personajesFavos" value="angela"/>Angelo<br><br>
+					
+					<b>¿Con qué nota valorarías DragonQuest VIII?</b><br>
+					<input type="range" min="1" max="10" name="valoracionJuego" type="range"><br><br>
+				
+					<b>¿Qué introducirías en esta página (sobre el videojuego)?</b><br>
+					<input type="text" list="ideas" id="idea" name="idea">
+						<datalist id="ideas">
+							<option value="Información sobre las armas y armaduras">
+							<option value="Información sobre los personajes secundarios">
+							<option value="Una guía paso a paso">
+							<option value="Un foro para compartir opiniones sobre DQVIII">
+						</datalist><br><br>
+						
+					<b>¿Qué te ha parecido la página? ¿Cómo la mejorarías?:</b><br>
+					<textarea id="opinion" name="opinion" rows="5" cols="20" ></textarea><br>
+					<input type="reset" id="reset" value="Vaciar" /> <input type="submit" id="submit" value="ENVIAR" /><br>
+			</form>
+		</div>
+		</div>
+		<div id="marcoFooter">
+			<div id="footer">
+				<div id="footerIzquierdo">
+					<div id="footerColumnaPrimera">
+						<h5>Contacto</h5>
+						<p class="parrafoFooter">C/ San Patricio 25, 2ºC</p>
+						<p class="parrafoFooter">Alcoleja, Alicante (03872)</p>
+						<p class="parrafoFooter">966 89 76 56</p>
+						<p class="parrafoFooter">Puedes enviarnos un mensaje <a href="contacto.html">AQUÍ</a></p>
+					</div>
+					<div id="footerColumnaSegunda">
+						<h5>Páginas de interés</h5>
+						<ul>
+							<li><a href="http://es.dragonquest.wikia.com/wiki/Dragon_Quest_Wiki">Dragon Quest Wiki</a></li>
+							<li><a href="https://eu.square-enix.com/en/home">Square Enix Official</a></li>
+							<li><a href="http://www.guiasnintendo.com/0a_NINTENDO_3DS/dragon_quest_VIII_periplo_rey_maldito/dragon_quest_VIII_periplo_rey_maldito_sp/welcome.html">Guia de Dragon Quest VIII (3DS)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="footerDerecho">
+					<h5>Redes sociales</h5>
+					<a href="https://www.tumblr.com/"><img src="elementos/tumblrIcon.png" /></a>   
+					<a href="https://www.twitter.com/"><img src="elementos/twitterIcon.png" /></a>   
+					<a href="https://es-es.facebook.com/"><img src="elementos/facebookIcon.png" /></a>
+				</div>
+			</div>
+		</div>
+		<div id="reFooter">
+			<p class="parrafoReFooter">Dissenyat per Felip Agente Secreto</p>
+		</div>
+	</body>
+	
+</html>
